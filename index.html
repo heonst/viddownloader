@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="monetag" content="ISI_KODE_DISINI">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapVid - Pengunduh Video Gratis</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { background: #1e293b; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); width: 90%; max-width: 500px; text-align: center; }
+        h1 { color: #38bdf8; margin-bottom: 1.5rem; }
+        input { width: 100%; padding: 12px; margin-bottom: 1rem; border-radius: 8px; border: none; outline: none; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #0ea5e9; }
+        .footer { margin-top: 2rem; font-size: 0.8rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SnapVid 📥</h1>
+        <p>Tempel link video (TikTok/IG/FB) di bawah ini:</p>
+        <input type="text" placeholder="https://www.tiktok.com/@user/video/..." id="videoUrl">
+        <button onclick="downloadVideo()">Unduh Sekarang</button>
+        <div class="footer">
+            &copy; 2026 SnapVid Downloader - Bebas Iklan Berbahaya
+        </div>
+    </div>
+
+    <script>
+        function downloadVideo() {
+            const url = document.getElementById('videoUrl').value;
+            if(url) {
+                alert('Mempersiapkan unduhan untuk: ' + url);
+                // Di sini nanti kita bisa hubungkan ke API downloader gratis
+            } else {
+                alert('Silakan masukkan link video dulu ya!');
+            }
+        }
+    </script>
+</body>
+</html>
